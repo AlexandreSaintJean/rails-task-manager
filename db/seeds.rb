@@ -3,5 +3,8 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+
+Task.create(title: 'faire la cuisine', description: 'Lorem ipsum dolor sit ameto, dicta inventore', date: Date.today, done: 'false', important: 'true')
+
+
+# u = User.create :title => "faire la cuisine", :description => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae expedita fugiat ab alias deleniti nulla, culpa magni sit fuga impedit unde natus maxime quis, obcaecati inventore cupiditate, nostrum, provident nisi.", :date => "08/09/2016", :done => "false", :important => "true"
