@@ -1,0 +1,25 @@
+  <h1 class="text-center"><%= @task.title.capitalize %></h1>
+  <div class="container">
+    <div class="card">
+      <ul>
+       <em>Adding the <%= @task.date %></em>
+       <p>What to do: <%= @task.description %></p>
+       <p>Done: <%= @task.done %></p>
+       <p>Important: <%= @task.important %></p>
+      </ul>
+    </div>
+    <div class="text-center">
+      <div class= "btn btn-primary btn-lg">
+        <p><%= link_to 'Tasks Listing', tasks_path %></p>
+      </div>
+      <div class= "btn btn-primary btn-lg">
+        <p><%= link_to 'Update Task', edit_task_path %></p>
+      </div>
+      <div class= "btn btn-primary btn-lg">
+        <p><%= link_to 'Delete Task', task_path(@task), method: :delete %></p>
+      </div>
+    </div>
+
+  </div>
+
+

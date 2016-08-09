@@ -1,0 +1,22 @@
+<h1 class="text-center">Tasks Listing</h1>
+
+
+  <% @tasks.each do |task| %>
+  <div class="container">
+    <%= link_to task_path(task) do %>
+    <div class="card">
+      <ul>
+       <h2><%= task.title.capitalize %></h2>
+       <em>Adding the <%= task.date %></em>
+       <p>Done: <%= task.done %></p>
+       <p>Important: <%= task.important %></p>
+      </ul>
+    </div>
+    <% end %>
+  </div>
+<% end %>
+<div class="container text-center">
+  <div class="btn btn-primary btn-lg">
+   <%=link_to "New Task", new_task_path %>
+  </div>
+</div>

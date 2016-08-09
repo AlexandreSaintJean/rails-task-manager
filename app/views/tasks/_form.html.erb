@@ -1,0 +1,24 @@
+
+<div class="card new-form">
+  <%= form_for(@task) do |f| %>
+
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div>
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+  <div>
+    <%= f.label :date %>
+    <%= f.date_field :date %>
+    <%= f.label :done %>
+    <%= f.check_box :done %>
+    <%= f.label :important %>
+    <%= f.check_box :important %>
+  </div>
+    <%= f.submit :class => 'btn btn-primary btn-lg' %>
+
+  <% end %>
+</div>
